@@ -42,13 +42,13 @@ process_args $*
 cd $build_root
 
 echo copy iothub_client library to system lib
-cp $build_folder/python/src/iothub_client.so /usr/local/lib/python2.7/lib-dynload/iothub_client.so
+cp $build_folder/python/src/iothub_client.so /usr/local/lib/python2.7/dist-packages/iothub_client.so
 
 echo copy iothub_service_client library to system lib
-cp $build_folder/python_service_client/src/iothub_service_client.so /usr/local/lib/python2.7/lib-dynload/iothub_service_client.so
+cp $build_folder/python_service_client/src/iothub_service_client.so /usr/local/lib/python2.7/dist-packages/iothub_service_client.so
 
 echo copy provisioning_device_client library to system folder
-cp $build_folder/provisioning_device_client_python/src/provisioning_device_client.so /usr/local/lib/python2.7/lib-dynload/provisioning_device_client.so
+cp $build_folder/provisioning_device_client_python/src/provisioning_device_client.so /usr/local/lib/python2.7/dist-packages/provisioning_device_client.so
 
 #echo copy iothub_client library to samples folder
 #cp $build_folder/python/src/iothub_client.so ./device/samples/iothub_client.so
