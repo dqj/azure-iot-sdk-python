@@ -42,7 +42,7 @@ process_args $*
 cd $build_root
 
 echo copy iothub_client library to system lib
-cp $build_folder/python/src/iothub_client.so /usr/lib/iothub_client.so
+cp $build_folder/python/src/iothub_client.so /usr/local/lib/python2.7/dist-packages/iothub_client.so
 
 #echo copy iothub_service_client library to system lib
 #cp $build_folder/python_service_client/src/iothub_service_client.so /usr/local/lib/python2.7/iothub_service_client.so
